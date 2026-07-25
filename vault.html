@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMPT.GOD // The Vault</title>
+    <!-- Same font imports as index.html for visual consistency -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Syne:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Shared Navigation Bar: Notice 'active' class is moved to THE VAULT button on this page -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">⚡ PROMPT.GOD</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">THE KITCHEN</a>
+            <a href="vault.html" class="nav-btn active">THE VAULT</a>
+        </div>
+    </nav>
+
+    <!-- Vault Main Container: Uses a slightly wider max-width to accommodate a multi-column card grid -->
+    <main class="vault-container">
+        <header>
+            <h1 class="main-title">THE PROMPT VAULT</h1>
+            <p class="tagline">Curated, battle-tested system directives. Grab a template below and paste it directly into your AI model.</p>
+        </header>
+
+        <!-- CSS Grid layout that automatically adapts from 1 column on phones to multiple columns on desktop -->
+        <div class="vault-grid">
+            
+            <!-- Vault Card 1: Coding / Debugging -->
+            <div class="vault-card vc-1">
+                <div class="vault-card-header">
+                    <span>THE BUG SLAYER</span>
+                    <span class="badge">CODING</span>
+                </div>
+                <div class="vault-card-body">
+                    <!-- '.vault-raw-text' is targeted by JavaScript so we know exactly what string to copy to the clipboard -->
+                    <p class="vault-raw-text">Act as an elite software debugger. I will provide code snippets and error logs. Do not explain standard programming concepts. Immediately identify the root cause, explain the memory/execution failure in 2 sentences, and provide the fully patched code block with inline comments explaining the fix.</p>
+                </div>
+                <div class="vault-card-footer">
+                    <!-- '.vault-copy-btn' triggers the copy listener in script.js -->
+                    <button class="vault-copy-btn" type="button">COPY DIRECTIVE ⚡</button>
+                </div>
+            </div>
+
+            <!-- Vault Card 2: Systems Architecture -->
+            <div class="vault-card vc-2">
+                <div class="vault-card-header">
+                    <span>THE ELITE ARCHITECT</span>
+                    <span class="badge">SYSTEMS</span>
+                </div>
+                <div class="vault-card-body">
+                    <p class="vault-raw-text">Act as a Principal Systems Architect. When I present a project idea, map out the entire technical stack, database schema, and folder structure. Prioritize high scalability, zero technical debt, and modern security standards. Output your response strictly in structured Markdown with diagrams where applicable.</p>
+                </div>
+                <div class="vault-card-footer">
+                    <button class="vault-copy-btn" type="button">COPY DIRECTIVE ⚡</button>
+                </div>
+            </div>
+
+            <!-- Vault Card 3: Writing / Editing -->
+            <div class="vault-card vc-3">
+                <div class="vault-card-header">
+                    <span>THE ACADEMIC WEAPON</span>
+                    <span class="badge">WRITING</span>
+                </div>
+                <div class="vault-card-body">
+                    <p class="vault-raw-text">Act as an Ivy League Research Peer. Review my written arguments for logical fallacies, weak phrasing, and poor flow. Elevate the vocabulary to be precise and authoritative without sounding artificially verbose or robotic. Provide bullet points of actionable critiques before showing the rewritten version.</p>
+                </div>
+                <div class="vault-card-footer">
+                    <button class="vault-copy-btn" type="button">COPY DIRECTIVE ⚡</button>
+                </div>
+            </div>
+
+            <!-- Vault Card 4: Learning / Teaching -->
+            <div class="vault-card vc-4">
+                <div class="vault-card-header">
+                    <span>THE CONCEPT CRACKER</span>
+                    <span class="badge">LEARNING</span>
+                </div>
+                <div class="vault-card-body">
+                    <p class="vault-raw-text">Act as a world-class technical educator. Break down the complex topic I provide using the Feynman Technique. Use one vivid real-world analogy, avoid dense academic jargon, and finish with 3 quick test questions to verify my understanding of the core concept.</p>
+                </div>
+                <div class="vault-card-footer">
+                    <button class="vault-copy-btn" type="button">COPY DIRECTIVE ⚡</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
