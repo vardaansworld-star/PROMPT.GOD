@@ -8,7 +8,7 @@ so i took matters into my own hands and made **PROMPT.GOD**!! this app literally
 ---
 
 ## 🚀🔥 LIVE DEPLOYMENT rn (CHECK IT OUT!!):
-### 👉 **[CLICK HERE FOR LIVE DEMO bc its actually bussin](https://your-github-username.github.io/your-repo-name)** 👈
+### 👉 **[CLICK HERE FOR LIVE DEMO bc its actually bussin](https://vardaansworld-star.github.io/PROMPT.GOD/)** 👈
 
 ---
 
