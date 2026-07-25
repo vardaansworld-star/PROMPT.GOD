@@ -22,6 +22,6 @@ so i took matters into my own hands and made **PROMPT.GOD**!! this app literally
 
 ## 🛠️ how to run this locally on ur pc (if u want to):
 
-1. clone this repo or download the zip file right now:
-   ```bash
-   git clone [https://github.com/your-username/prompt-god.git](https://github.com/your-username/prompt-god.git)
+1. Download all the files and keep it in 1 Folder
+2. Get any extension for hosting
+3. Just check the website out now!
