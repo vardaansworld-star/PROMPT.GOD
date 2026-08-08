@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <!-- Sets the viewport so the website looks great on both mobile phones and desktop screens -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>PROMPT.GOD // The Kitchen</title>
-
     <!-- Google Fonts Preconnecting: Speeds up font loading by establishing an early connection to Google's servers -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"href="https://fonts.googleapis.com">
+    <link rel="preconnect"href="https://fonts.gstatic.com" crossorigin>
     <!-- Importing Amatic SC for that sketchy, hand-drawn Gen-Z title vibe, and Syne for bold headings -->
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Syne:wght@700&display=swap" rel="stylesheet">
-    
     <!-- Linking our external stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="style.css">
 </head>
 <body>
-
     <!-- Shared Navigation Bar: Allows switching between The Kitchen (generator) and The Vault (pre-made library) -->
     <nav class="navbar">
         <a href="index.html" class="nav-logo">⚡ PROMPT.GOD</a>
@@ -25,15 +22,12 @@
             <a href="vault.html" class="nav-btn">THE VAULT</a>
         </div>
     </nav>
-
     <!-- Decorative Y2K Stickers: Absolutely useless for functionality, but 100% necessary for the chaotic teenage aesthetic -->
     <div class="sticker s1">🔥 CRINGE-PROOF</div>
     <div class="sticker s2">⚡ NO MORE MID OUTPUTS</div>
     <div class="sticker s3">🤖 GOBLIN MODE</div>
-
     <!-- Main Container: Holds the core interactive elements and centers them on the screen -->
     <main class="app-container">
-        
         <!-- Hero Section: The big eye-catching title and explanation -->
         <header>
             <h1 class="main-title">COOK GOD-LEVEL PROMPTS</h1>
@@ -49,13 +43,11 @@
                 <span class="dot green"></span>
                 <span class="window-title">prompt_kitchen.exe</span>
             </div>
-            
             <!-- Body of the window containing form inputs -->
             <div class="card-body">
                 <label for="user-intent">What is your objective?</label>
                 <!-- Textarea where the user types their vague or messy idea -->
                 <textarea id="user-intent" placeholder="e.g., explain the 1st law of motion, or write a script to scrape product prices..."></textarea>
-                
                 <!-- 2-Column Grid for selecting AI persona and strictness intensity -->
                 <div class="settings-grid">
                     <div>
@@ -74,12 +66,10 @@
                         <input type="range" id="intensity" min="1" max="3" value="2">
                     </div>
                 </div>
-
                 <!-- Action Button: type="button" prevents page reloads. We listen to clicks on this ID in JS -->
                 <button id="generate-btn" type="button" class="action-btn">COOK PROMPT ⚡</button>
             </div>
         </section>
-
         <!-- Output Window: Initially hidden using the 'invisible' CSS class. JS removes that class when a prompt is cooked -->
         <section class="card output-box invisible" id="output-window">
             <div class="card-header">
@@ -92,7 +82,6 @@
             </div>
         </section>
     </main>
-
     <!-- Linking our external JavaScript engine at the very bottom so DOM elements load first -->
     <script src="script.js"></script>
 </body>
